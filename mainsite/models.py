@@ -24,8 +24,8 @@ class companyplace(models.Model):
 class company(models.Model):
     time = models.CharField(max_length=1000, null=False)
     place = models.CharField(max_length=1000, default='M', null=False)
-    dead = models.CharField(max_length=1000, default='M', null=False)
-    Injured = models.CharField(max_length=1000, default='M', null=False)
+    die = models.CharField(max_length=1000, default='M', null=False)
+    injured = models.CharField(max_length=1000, default='M', null=False)
     car = models.CharField(max_length=1000, blank=True, default='')
     longitude = models.CharField(max_length=1000, blank=True, default='')
     latitude = models.CharField(max_length=1000, blank=True, default='')

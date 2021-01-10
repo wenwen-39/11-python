@@ -11,8 +11,8 @@ for row in data:
         unit = company()
         unit.time = row[0]
         unit.place = row[1]
-        unit.dead = row[2]
-        unit.Injured = row[3]
+        unit.die = row[2]
+        unit.injured = row[3]
         unit.car = row[4]
         unit.longitude = row[5]
         unit.latitude = row[6]
