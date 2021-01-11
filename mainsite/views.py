@@ -6,6 +6,7 @@ from mainsite.models import company, companyplace
 
 def homepage(request):    
     test = companyplace.objects.all()
+
     return render(request,"index.html", locals())
 
 def maps_mod(request,la,lo):
@@ -94,11 +95,9 @@ def homepage1(request, place=0):
         elif place==27:
             data = company.objects.filter(place__contains='澎湖縣')
             return render(request,"place.html", locals())
-        
         elif place==30:
             data = company.objects.filter(place__contains='金門縣')
-            return render(request,"place.html", locals())
-        
+            return render(request,"place.html", locals())        
         elif place==32:
             data = company.objects.filter(place__contains='連江縣')
             return render(request,"place.html", locals())
